@@ -96,16 +96,19 @@ from mappings import CLASS_NAMES, DATASET_INFO
 
 def load_sample_images():
     """Load available sample images."""
-    sample_images = {
-        'Closed (Sample 1)': '_0.jpg',
-        'Closed (Sample 2)': '_1.jpg',
-        'Open (Sample 1)': '1.jpg',
-        'Open (Sample 2)': '3.jpg',
-        'Yawn (Sample 1)': '_8.jpg',
-        'Yawn (Sample 2)': '_9.jpg',
-    }
-    return sample_images
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    sample_dir = os.path.join(base_dir, "sample_images")
 
+    sample_images = {
+        'Closed (Sample 1)': os.path.join(sample_dir, '_0.jpg'),
+        'Closed (Sample 2)': os.path.join(sample_dir, '_1.jpg'),
+        'Open (Sample 1)': os.path.join(sample_dir, '1.jpg'),
+        'Open (Sample 2)': os.path.join(sample_dir, '3.jpg'),
+        'Yawn (Sample 1)': os.path.join(sample_dir, '_8.jpg'),
+        'Yawn (Sample 2)': os.path.join(sample_dir, '_9.jpg'),
+    }
+
+    return sample_images
 
 def render_home_page():
     """Render the main home/drowsiness check page."""
