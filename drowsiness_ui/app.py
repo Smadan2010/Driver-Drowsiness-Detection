@@ -102,10 +102,10 @@ def load_sample_images():
     sample_images = {
         'Closed (Sample 1)': os.path.join(sample_dir, '_0.jpg'),
         'Closed (Sample 2)': os.path.join(sample_dir, '_1.jpg'),
-        'Open (Sample 1)': os.path.join(sample_dir, '1.jpg'),
-        'Open (Sample 2)': os.path.join(sample_dir, '3.jpg'),
-        'Yawn (Sample 1)': os.path.join(sample_dir, '_8.jpg'),
-        'Yawn (Sample 2)': os.path.join(sample_dir, '_9.jpg'),
+        'No_Yawn (Sample 1)': os.path.join(sample_dir, '1.jpg'),
+        'Yawn (Sample 2)': os.path.join(sample_dir, '3.jpg'),
+        'Open (Sample 1)': os.path.join(sample_dir, '_8.jpg'),
+        'Open (Sample 2)': os.path.join(sample_dir, '_9.jpg'),
     }
 
     return sample_images
